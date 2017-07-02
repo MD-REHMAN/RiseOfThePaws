@@ -1,0 +1,56 @@
+//Speed
+			if (speed<devUnitHeight*0.3f) {
+				speed = speed + (devUnitHeight/200);
+				Score=Score+1;
+				Time++;
+			}
+			else if (speed<devUnitHeight*0.6f) {
+				speed = speed + (devUnitHeight/300);
+				Time++;
+				Score=Score+2;
+			}
+			else if (speed<devUnitHeight*0.9f) {
+				speed = speed + (devUnitHeight/500);
+				Time++;
+				Score=Score+4;
+			}
+			else if (speed<devUnitHeight*1.2f) {
+				speed = speed + (devUnitHeight/700);
+				Time++;
+				Score=Score+5;
+			}
+			else if (speed<devUnitHeight*1.5f) {
+				speed = speed + (devUnitHeight/900);
+				Time++;
+				Score=Score+7;
+			}
+			else if (speed<devUnitHeight*1.8f) {
+				speed = speed + (devUnitHeight/1000);
+				Time++;
+				Score=Score+10;
+			}
+			else if (speed<devUnitHeight*2.1f) {
+				speed = speed + (devUnitHeight/1000);
+				Time++;
+				Score=Score+13;
+			}
+			else if (speed<devUnitHeight*2.4f) {
+				speed = speed + (devUnitHeight/1100);
+				Time++;
+				Score=Score+17;
+			}
+			else if (speed<devUnitHeight*2.7f) {
+				speed = speed + (devUnitHeight/1200);
+				Time++;
+				Score=Score+20;
+			}
+			else if (speed<devUnitHeight*3.0f) {
+				speed = speed + (devUnitHeight/1300);
+				Time++;
+				Score=Score+25;
+			}
+			else {
+				speed = speed + (devUnitHeight/2000);
+				Time++;
+				Score=Score+50;
+			}
