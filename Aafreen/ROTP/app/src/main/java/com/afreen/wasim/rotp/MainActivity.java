@@ -10,6 +10,7 @@ import android.view.MotionEvent;
 import com.imagine.hp.rotpaws.MyView;
 
 public class MainActivity extends Activity {
+    Intent i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,16 @@ public class MainActivity extends Activity {
 
         MyView mv = new MyView(this);
         setContentView(mv);
+        i=new Intent(this,MusicService.class);
+        startService(i);
 
+
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        stopService(i);
     }
 }

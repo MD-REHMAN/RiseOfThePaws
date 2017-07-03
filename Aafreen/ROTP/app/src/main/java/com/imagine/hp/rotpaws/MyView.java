@@ -54,9 +54,9 @@ public class MyView extends View {
         jumpingCat8 = BitmapFactory.decodeResource(getResources(),R.drawable.jumpingcat8);
         jumpingCat9 = BitmapFactory.decodeResource(getResources(),R.drawable.jumpingcat9);
         jumpingCat10 = BitmapFactory.decodeResource(getResources(),R.drawable.jumpingcat10);
-        jumpingCat11= BitmapFactory.decodeResource(getResources(),R.drawable.jumpingcat11);
-        jumpingCat12= BitmapFactory.decodeResource(getResources(),R.drawable.jumpingcat12);
-        jumpingCat13= BitmapFactory.decodeResource(getResources(),R.drawable.jumpingcat13);
+        jumpingCat11 = BitmapFactory.decodeResource(getResources(),R.drawable.jumpingcat11);
+        jumpingCat12 = BitmapFactory.decodeResource(getResources(),R.drawable.jumpingcat12);
+        jumpingCat13 = BitmapFactory.decodeResource(getResources(),R.drawable.jumpingcat13);
 
 
 
@@ -102,7 +102,7 @@ public class MyView extends View {
                 drawForestBack(forestBack2, forestBack_y, canvas);
 
                 // Toast.makeText(getContext(),devWidth+", "+devHeight,Toast.LENGTH_SHORT).show();
-                Toast.makeText(getContext(),runningCat1.getWidth()+", "+runningCat1.getHeight(),Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(),runningCat1.getWidth()+", "+runningCat1.getHeight(),Toast.LENGTH_SHORT).show();
 
                 //Speed
                 int devUnitHeight = devHeight/100;
@@ -183,34 +183,34 @@ public class MyView extends View {
 
                 //Cat Annimation
                 if(realTime%10==0) {
-                    drawRunningCat1(devWidth-runningCat1.getWidth(), devHeight-runningCat1.getHeight(), canvas);
+                    drawRunningCat1(0, devHeight-runningCat1.getHeight(), canvas);
                 }
                 if(realTime%10==1) {
-                    drawRunningCat2(devWidth - runningCat2.getWidth(), devHeight - runningCat2.getHeight(), canvas);
+                    drawRunningCat2(0, devHeight - runningCat2.getHeight(), canvas);
                 }
                 if(realTime%10==2) {
-                    drawRunningCat3(devWidth-runningCat3.getWidth(), devHeight-runningCat3.getHeight(), canvas);
+                    drawRunningCat3(0, devHeight-runningCat3.getHeight(), canvas);
                 }
                 if(realTime%10==3) {
-                    drawRunningCat4(devWidth-runningCat4.getWidth(), devHeight-runningCat4.getHeight(), canvas);
+                    drawRunningCat4(0, devHeight-runningCat4.getHeight(), canvas);
                 }
                 if(realTime%10==4) {
-                    drawRunningCat5(devWidth-runningCat5.getWidth(), devHeight-runningCat5.getHeight(), canvas);
+                    drawRunningCat5(0, devHeight-runningCat5.getHeight(), canvas);
                 }
                 if(realTime%10==5) {
-                    drawRunningCat6(devWidth-runningCat6.getWidth(), devHeight-runningCat6.getHeight(), canvas);
+                    drawRunningCat6(0, devHeight-runningCat6.getHeight(), canvas);
                 }
                 if(realTime%10==6) {
-                    drawRunningCat7(devWidth-runningCat7.getWidth(), devHeight-runningCat7.getHeight(), canvas);
+                    drawRunningCat7(0, devHeight-runningCat7.getHeight(), canvas);
                 }
                 if(realTime%10==7) {
-                    drawRunningCat8(devWidth-runningCat8.getWidth(), devHeight-runningCat8.getHeight(), canvas);
+                    drawRunningCat8(0, devHeight-runningCat8.getHeight(), canvas);
                 }
                 if(realTime%10==8) {
-                    drawRunningCat9(devWidth-runningCat9.getWidth(), devHeight-runningCat9.getHeight(), canvas);
+                    drawRunningCat9(0, devHeight-runningCat9.getHeight(), canvas);
                 }
                 if(realTime%10==9) {
-                    drawRunningCat10(devWidth-runningCat10.getWidth(), devHeight-runningCat10.getHeight(), canvas);
+                    drawRunningCat10(0, devHeight-runningCat10.getHeight(), canvas);
                 }
 
 
