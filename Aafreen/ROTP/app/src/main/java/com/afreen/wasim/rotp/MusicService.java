@@ -28,7 +28,7 @@ import android.widget.Toast;
         public void onCreate() {
             super.onCreate();
            // Toast.makeText(getApplicationContext(), "i am on my music service", Toast.LENGTH_LONG).show();
-            mp=MediaPlayer.create(this,R.raw.a);
+            mp=MediaPlayer.create(this,R.raw.backgroundmusic);
             mp.setOnCompletionListener(this);
         }
 

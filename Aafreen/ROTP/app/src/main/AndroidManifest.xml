@@ -20,7 +20,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".MyView" />
-        <service android:name=".MusicService"></service>
+
+        <service android:name=".MusicService" />
+
+        <activity android:name=".secondPage" />
+        <activity android:name=".login" />
+        <activity android:name=".aboutUs" />
+        <activity android:name=".howTo"></activity>
     </application>
 
 </manifest>
