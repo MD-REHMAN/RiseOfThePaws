@@ -550,7 +550,7 @@ public class MyGame extends View {
 			case 4:
 				drawCarBody4(myCarX, myCarY, canvas);
 				break;
-			case 5:
+			case 5: 	
 				drawCarBody5(myCarX, myCarY, canvas);
 				break;
 			case 6:
@@ -732,7 +732,7 @@ public class MyGame extends View {
 				if ((obsCar2_y+obsCar2.getHeight())>=myCarY && obsCar2_y<=myCarY+myCar.getHeight() && myCarX==carPos2) {
 					speed=0;
 					screenControler=-2;
-				}
+ 				}
 				obsCar2_y=obsCar2_y+speed-obscar2_speed;
 			} else {
 				if (obsCar1_y>devHeight && obsCar3_y>devHeight && obsCar4_y>devHeight) {

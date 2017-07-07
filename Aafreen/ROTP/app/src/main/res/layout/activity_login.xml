@@ -14,8 +14,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText"
         android:hint="Nickname"
-        android:textSize="62dp"
-        android:layout_marginTop="75dp"
+        android:textSize="49dp"
+        android:layout_marginTop="119dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -23,9 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LOGIN"
-        android:textSize="40dp"
+        android:textSize="33dp"
         android:id="@+id/button"
-        android:layout_marginTop="127dp"
         android:layout_below="@+id/editText"
         android:layout_centerHorizontal="true" />
 
