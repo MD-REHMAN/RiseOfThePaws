@@ -10,6 +10,7 @@ on Touch(){
 
 if(Isjumping == 1) {
 	cat_y = cat_y - jumpSpeed;
+	// This is the part we're we will draw jumping cats
 }
 
 if(cat_y >= obstical.getheight()) {
@@ -19,6 +20,7 @@ if(cat_y >= obstical.getheight()) {
 
 if(IsFalling == 1) {
 	cat_y = cat_y - fallSpeed;
+	// And in the part we'll draw falling cats
 }
 
 
