@@ -1,0 +1,28 @@
+The below code is not work if you just copy and paste it on the code.
+The code only contais the logic. So you might have to add new variable to the code or edit some existing variables or the variable of this code accordingly.'
+
+
+
+
+on Touch(){
+	Isjumping = 1;
+}
+
+if(Isjumping == 1) {
+	cat_y = cat_y - jumpSpeed;
+}
+
+if(cat_y >= obstical.getheight()) {
+	Isjumping = 0;
+	IsFalling = 1;
+}
+
+if(IsFalling == 1) {
+	cat_y = cat_y - fallSpeed;
+}
+
+
+if(cat_y <= ground_y) {
+	cat_y = ground_y;
+	IsFalling = 0;
+}
