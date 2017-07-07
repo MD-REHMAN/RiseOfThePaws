@@ -22,14 +22,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="
-Howdy!
-Welcome to Rise Of The Paws.
-Developed by Aditi Chaudhary, Afreen Akhtar, and Simi Shrivastava, students of 4th semester (Electronics and Telecomm.).Being students of Electronics, we all shared interest towards coding and software related matters. So as part of our training, we chose to pursue a course on Java and Android. This app is made to serve as a project, mandatory to submit at the end of the Java-Android training. After lots of counseling and surfing, we finally decided that we’ll make a gaming app. Since all three of us had a common liking towards felines, we made it firm that our main character would be a cat. This game is from our point of view and might differ for others.
-We were able to finish this project because of the support of the team at Innolat, Raipur (the institute from where we pursued the java-android course).  In the first place, special thanks to Tushar Vadera Sir for providing us this opportunity to learn something new of our interest. A big thank you to Anoop Sir, Abhishek Sir and Aashish Sir for explaining the very basics of Android. It wouldn’t have been possible without your guidance and support. They tried to clear as many queries as possible without complaining. Another big thanks to Devesh Sir for guiding us throughout. A special mention to Rehmaan Sir for it was he who made us familiar with basic terms of animation.
-Lastly, we would like to thank our parents for allowing us to do whatever we wanted to and for their support throughout the course of this project. And also for their suggestions as to how we can make this app better. And thanks to Parth Chaudhary for helping us with the design aspect of the app.
-
+        android:text="Developed  By: Aditi  Chaudhary
+		                             Aafreen Akhtar
+	    	                         Simi Shrivastava
+      Under support and guidance of: Team INNOLAT  and the trainers, Anoop Sir, Abhishek Sir, Aashish Sir.
+      Special Thanks to Tushar Vadera Sir, Devesh Sir and Rehmaan Sir.
+      Logo and Background Music Credits to Parth Chaudhary and Starkeh.
 "
+
         android:id="@+id/textView2"
         android:textSize="17dp"
 

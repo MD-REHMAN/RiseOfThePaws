@@ -46,6 +46,8 @@ public class MyView extends View {
 
 
     Paint paint;
+    private int IsFalling;
+    private int Isjumping;
 
     public MyView(Context context) {
         super(context);
@@ -152,17 +154,46 @@ public class MyView extends View {
                             default:
                                 break;
                         }
-                        if(touch_x>0 && touch_y>0) {
+                       if(touch_x>0 && touch_y>0) {
                             jumpStartFlag=1;
+                            Isjumping = 1;
+                        }
+
+                        if(Isjumping == 1) {
+                            cat_y = cat_y - jumpSpeed;
+                            // This is the part we're we will draw jumping cats
+                        }
+
+
+                        if(cat_y >= runningCat1.getHeight()) {
+                            Isjumping = 0;
+                            IsFalling = 1;
+                        }
+
+                        if(IsFalling == 1) {
+                            int fallSpeed=0;
+                            cat_y = cat_y - fallSpeed;
+                            // And in the part we'll draw falling cats
+                        }
+
+
+                        int ground_y = 0;
+                        if(cat_y <= ground_y) {
+                            cat_y = ground_y;
+                            IsFalling = 0;
+                        }
+                        return false;
+
+
 
                         }
 
-                        return false;
-                    }
+
+
                 });
 
 
-                if (jumpStartFlag==1 && cat_y>=jumpingCat10.getHeight()+jumpingCat10.getHeight()/2){
+               /* if (jumpStartFlag==1 && cat_y>=jumpingCat10.getHeight()+jumpingCat10.getHeight()/2){
                     Toast.makeText(getContext(),"jump start",Toast.LENGTH_LONG).show();
                     cat_y = cat_y - jumpSpeed;
 
@@ -170,10 +201,13 @@ public class MyView extends View {
                 if (fallStartFlag==1 && cat_y<=devHeight) {
 
                     cat_y = cat_y + jumpSpeed;
-                }
+                }*/
 
 
-                //drawForestBack(forestBack1, forestBack_y, canvas);
+
+
+
+            //drawForestBack(forestBack1, forestBack_y, canvas);
                 //drawForestBack(forestBack2, forestBack_y, canvas);
 
                 //drawbackUp2(forestBack1, forestBack_y, canvas);
@@ -304,13 +338,15 @@ public class MyView extends View {
 
                 break;
 
-            default:
-                break;
+
 
         }
-        invalidate();
+
+    invalidate(); {
 
     }
+
+}
 
 
 
